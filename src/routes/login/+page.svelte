@@ -14,10 +14,10 @@
     }
 
 
-    export let form;
-    console.log(form?.formData)
+    // export let form;
+    // console.log(form?.formData)
 
-    export const email = writable(form?.formData.email);
+    // export const email = writable(form?.formData.email);
 </script>
 
 <header>
@@ -26,9 +26,6 @@
 <main>
     <div class="container">
         <div class="container-left">
-            {#if form?.success}
-             <span>{form?.formData.email}</span>
-            {/if}
             <div class="img">
                 <a href="/">
                     <img

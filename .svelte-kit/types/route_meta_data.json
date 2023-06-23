@@ -1,0 +1,23 @@
+{
+	"/": [],
+	"/ajuda": [],
+	"/contato": [],
+	"/dashboard-admin": [],
+	"/dashboard-admin/cursos": [],
+	"/dashboard-admin/cursos/create": [],
+	"/dashboard-admin/disciplinas": [],
+	"/dashboard-admin/disciplinas/create": [],
+	"/dashboard-admin/turmas": [],
+	"/dashboard-admin/turmas/create": [],
+	"/dashboard-admin/users": [],
+	"/dashboard-admin/users/create": [
+		"src/routes/dashboard-admin/users/create/+page.server.js"
+	],
+	"/esqueceu-senha": [],
+	"/login": [
+		"src/routes/login/+page.server.js"
+	],
+	"/painel-aluno": [],
+	"/primeiro-acesso": [],
+	"/sobre-nos": []
+}

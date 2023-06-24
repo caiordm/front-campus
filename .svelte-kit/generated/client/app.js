@@ -19,29 +19,44 @@ export const nodes = [
 	() => import('./nodes/15'),
 	() => import('./nodes/16'),
 	() => import('./nodes/17'),
-	() => import('./nodes/18')
+	() => import('./nodes/18'),
+	() => import('./nodes/19'),
+	() => import('./nodes/20'),
+	() => import('./nodes/21'),
+	() => import('./nodes/22'),
+	() => import('./nodes/23'),
+	() => import('./nodes/24'),
+	() => import('./nodes/25'),
+	() => import('./nodes/26'),
+	() => import('./nodes/27'),
+	() => import('./nodes/28')
 ];
 
 export const server_loads = [];
 
 export const dictionary = {
-		"/": [2],
-		"/ajuda": [3],
-		"/contato": [4],
-		"/dashboard-admin": [5],
-		"/dashboard-admin/cursos": [6],
-		"/dashboard-admin/cursos/create": [7],
-		"/dashboard-admin/disciplinas": [8],
-		"/dashboard-admin/disciplinas/create": [9],
-		"/dashboard-admin/turmas": [10],
-		"/dashboard-admin/turmas/create": [11],
-		"/dashboard-admin/users": [12],
-		"/dashboard-admin/users/create": [~13],
-		"/esqueceu-senha": [14],
-		"/login": [~15],
-		"/painel-aluno": [16],
-		"/primeiro-acesso": [17],
-		"/sobre-nos": [18]
+		"/": [7],
+		"/ajuda": [8],
+		"/contato": [9],
+		"/dashboard-admin": [10],
+		"/dashboard-admin/cursos": [11],
+		"/dashboard-admin/cursos/create": [12],
+		"/dashboard-admin/disciplinas": [13],
+		"/dashboard-admin/disciplinas/create": [14],
+		"/dashboard-admin/turmas": [15],
+		"/dashboard-admin/turmas/create": [16],
+		"/dashboard-admin/users": [17],
+		"/dashboard-admin/users/create": [~18],
+		"/esqueceu-senha": [19],
+		"/login": [~20],
+		"/painel-aluno": [21],
+		"/painel-aluno/avisos": [22,[2]],
+		"/painel-aluno/boletim": [23,[3]],
+		"/painel-aluno/diarios": [24,[4]],
+		"/painel-aluno/registros": [25,[5]],
+		"/painel-aluno/requerimentos": [26,[6]],
+		"/primeiro-acesso": [27],
+		"/sobre-nos": [28]
 	};
 
 export const hooks = {

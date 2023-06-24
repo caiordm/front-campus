@@ -8,8 +8,7 @@
 />
 <header>
     <div class="header-left">
-        <div class="circle">
-        </div>
+        <div class="circle" />
         <div>
             <span
                 >Olá, <span style="color: #3065ac; font-weight:500;"
@@ -139,9 +138,7 @@
     }
 
     i {
-        padding: 5px;
         font-size: 25px;
-        color: #000;
         cursor: pointer;
     }
     i:hover {
@@ -176,12 +173,26 @@
         font-size: 16pt;
     }
 
-    /* select {
-    background-color: #eeeeee;
-    border: none;
-    padding: 2px;
-    margin-top: 5px;
-    border-radius: 5px;
-    font-weight: 600;
-} */
+    @media (max-width: 600px) {
+        .box {
+            display: none;
+        }
+
+        .buttons {
+            gap: 0.2rem;
+        }
+
+        i {
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 1rem;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+        }
+    }
 </style>

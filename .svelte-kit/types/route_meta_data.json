@@ -18,6 +18,11 @@
 		"src/routes/login/+page.server.js"
 	],
 	"/painel-aluno": [],
+	"/painel-aluno/avisos": [],
+	"/painel-aluno/boletim": [],
+	"/painel-aluno/diarios": [],
+	"/painel-aluno/registros": [],
+	"/painel-aluno/requerimentos": [],
 	"/primeiro-acesso": [],
 	"/sobre-nos": []
 }

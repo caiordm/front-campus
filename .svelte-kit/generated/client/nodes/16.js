@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/painel-aluno/+page.svelte";
+export { default as component } from "../../../../src/routes/dashboard-admin/turmas/create/+page.svelte";

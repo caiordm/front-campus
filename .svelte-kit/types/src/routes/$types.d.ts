@@ -10,7 +10,7 @@ type EnsureDefined<T> = T extends null | undefined ? {} : T;
 type OptionalUnion<U extends Record<string, any>, A extends keyof U = U extends U ? keyof U : never> = U extends unknown ? { [P in Exclude<A, keyof U>]?: never } & U : never;
 export type Snapshot<T = any> = Kit.Snapshot<T>;
 type PageParentData = EnsureDefined<LayoutData>;
-type LayoutRouteId = RouteId | "/" | "/ajuda" | "/contato" | "/dashboard-admin" | "/dashboard-admin/cursos" | "/dashboard-admin/cursos/create" | "/dashboard-admin/disciplinas" | "/dashboard-admin/disciplinas/create" | "/dashboard-admin/turmas" | "/dashboard-admin/turmas/create" | "/dashboard-admin/users" | "/dashboard-admin/users/create" | "/esqueceu-senha" | "/login" | "/painel-aluno" | "/primeiro-acesso" | "/sobre-nos" | null
+type LayoutRouteId = RouteId | "/" | "/ajuda" | "/contato" | "/dashboard-admin" | "/dashboard-admin/cursos" | "/dashboard-admin/cursos/create" | "/dashboard-admin/disciplinas" | "/dashboard-admin/disciplinas/create" | "/dashboard-admin/turmas" | "/dashboard-admin/turmas/create" | "/dashboard-admin/users" | "/dashboard-admin/users/create" | "/esqueceu-senha" | "/login" | "/painel-aluno" | "/painel-aluno/avisos" | "/painel-aluno/boletim" | "/painel-aluno/diarios" | "/painel-aluno/registros" | "/painel-aluno/requerimentos" | "/primeiro-acesso" | "/sobre-nos" | null
 type LayoutParams = RouteParams & {  }
 type LayoutParentData = EnsureDefined<{}>;
 

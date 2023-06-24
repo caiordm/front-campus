@@ -12,12 +12,6 @@
     function handleInput() {
         console.log(inputValue);
     }
-
-
-    // export let form;
-    // console.log(form?.formData)
-
-    // export const email = writable(form?.formData.email);
 </script>
 
 <header>
@@ -79,7 +73,7 @@
                 </div>
             </div>
             <div class="forms">
-                <form method="post" action="?/login">
+                <form>
                     <div class="login-conjunt">
                         <label for="email">Email</label>
                         {#if inputValue == "aluno"}

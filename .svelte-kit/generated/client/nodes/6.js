@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/dashboard-admin/cursos/+page.svelte";
+export { default as component } from "../../../../src/routes/painel-aluno/requerimentos/+layout.svelte";

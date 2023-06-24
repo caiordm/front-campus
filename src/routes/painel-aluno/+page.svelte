@@ -19,6 +19,14 @@
         }
     }
 
+    /**
+     * @param {{ key: string; }} e
+     */
+    function onKeyDown(e) {
+        if (e.key === "Enter") {
+            sendMessage();
+        }
+    }
 </script>
 
 <header>
@@ -26,52 +34,51 @@
 </header>
 
 <section>
-    <button class="button-section">
-        <i class="bi bi-app-indicator img-section" />
-
-        <a href="/aviso">
+    <a href="/painel-aluno/avisos">
+        <button class="button-section">
+            <i class="bi bi-app-indicator img-section" />
             <p>
                 <span>Avisos</span>
                 Veja aqui os avisos mais recentes publicados pelos professores.
             </p>
-        </a>
-    </button>
-    <button class="button-section">
-        <i class="bi bi-layout-text-window img-section" />
-        <a href="disciplina">
-            <p>
-                <span>Diários</span>
-                Aqui estão notas de atividades, trabalhos e etc.
-            </p>
-        </a>
-    </button>
-    <button class="button-section">
-        <i class="bi bi-receipt img-section" />
-        <a href="boletim">
+        </button>
+    </a>
+    <a href="/painel-aluno/boletim">
+        <button class="button-section">
+            <i class="bi bi-receipt img-section" />
             <p>
                 <span>Boletim</span>
                 Notas e faltas do semestre aparecerão aqui.
             </p>
-        </a>
-    </button>
-    <button class="button-section">
-        <i class="bi bi-check-square img-section" />
-        <a href="register">
+        </button>
+    </a>
+    <a href="/painel-aluno/diarios">
+        <button class="button-section">
+            <i class="bi bi-layout-text-window img-section" />
+            <p>
+                <span>Diários</span>
+                Aqui estão notas de atividades, trabalhos e etc.
+            </p>
+        </button>
+    </a>
+    <a href="/painel-aluno/registros">
+        <button class="button-section">
+            <i class="bi bi-check-square img-section" />
             <p>
                 <span>Registros</span>
                 Seus registros estão aqui.
             </p>
-        </a>
-    </button>
-    <button class="button-section">
-        <i class="bi bi-pencil-square img-section" />
-        <a href="requeriments.html">
+        </button>
+    </a>
+    <a href="/painel-aluno/requerimentos">
+        <button class="button-section">
+            <i class="bi bi-pencil-square img-section" />
             <p>
                 <span>Requerimentos</span>
                 Faça seus requerimentos pro bloco administrativo.
             </p>
-        </a>
-    </button>
+        </button>
+    </a>
 </section>
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <i class="bi bi-chat chat-icon" on:click={toggleChat} />
@@ -91,6 +98,7 @@
                 bind:value={message}
                 placeholder="Digite sua mensagem..."
                 class="input-chat"
+                on:keydown={onKeyDown}
             />
             <button on:click={sendMessage}>Enviar</button>
         </div>
@@ -109,7 +117,7 @@
         display: flex;
         min-height: 5rem;
         align-items: center;
-        width: 55%;
+        width: 100%;
         padding: 1rem;
         cursor: pointer;
         border-radius: 5px;
@@ -125,12 +133,16 @@
 
     a {
         text-decoration: none;
+        display: flex;
+        align-items: center;
+        width: 55%;
     }
 
     p {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        text-align: start;
         margin-left: 10px;
         color: #646464;
         font-size: 16px;
@@ -143,11 +155,9 @@
         font-weight: 600;
     }
     .img-section {
-        /* width: 50px; */
-        font-size: 2.2rem;
+        font-size: 2.4rem;
         margin-left: 10px;
         color: #3065ac;
-        /* margin: 0; */
     }
     .bi-chat {
         font-size: 2.6rem;
@@ -204,5 +214,19 @@
     .actions-chat {
         display: flex;
         flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+        span {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        i {
+            font-size: 1rem;
+        }
     }
 </style>

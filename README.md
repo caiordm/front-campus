@@ -2,7 +2,7 @@
 
 Aplicação pronta para aceso em:
 
-campusvirtualfront.vercel.app
+<a href="https://campusvirtualfront.vercel.app">Campus Virtual Front</a>
 
 # Developing
 

@@ -7,19 +7,22 @@
     <Header />
 </header>
 <main>
-    <section class="content max-w-xs md:max-w-xl">
-        <h1>Campus Virtual</h1>
-        <div class="subtitle">
-            <h3>Ajudando estudantes a</h3>
-            <h2>Gerenciar seus estudos</h2>
-        </div>
-        <p>
-            Bem vindo ao Campus Virtual, um site que irá lhe ajudar a gerenciar
-            os estudos!
-        </p>
-        <a href="/login" class="entrar">Entrar</a>
-    </section>
-    <Carousel />
+    <div class="main">
+        <section class="content max-w-xs md:max-w-xl">
+            <h1>Campus Virtual</h1>
+            <div class="subtitle">
+                <h3>Ajudando estudantes a</h3>
+                <h2>Gerenciar seus estudos</h2>
+            </div>
+            <p>
+                Bem vindo ao Campus Virtual, um site que irá lhe ajudar a
+                gerenciar os estudos!
+            </p>
+            <a href="/login" class="entrar">Entrar</a>
+        </section>
+        <Carousel />
+    </div>
+    <span>*Versão não oficial por motivos de custos de hospedagem*</span>
 </main>
 
 <style>
@@ -43,10 +46,21 @@
         margin-left: 2rem;
         height: 80vh;
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 2rem;
+    }
+
+    span {
+        color: #a1a1a1;
     }
 
     /* body {

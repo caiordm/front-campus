@@ -83,7 +83,7 @@
                                 id="login"
                                 name="email"
                                 placeholder="Digite seu email"
-                                value="emersongalego@email.com"
+                                value="aluno@email.com"
                             />
                         {:else}
                             <input
@@ -92,7 +92,7 @@
                                 id="login"
                                 name="email"
                                 placeholder="Digite seu email"
-                                value="pipico@email.com"
+                                value="adm@email.com"
                             />
                         {/if}
                     </div>
@@ -106,7 +106,7 @@
                                     id="password"
                                     name="senha"
                                     placeholder="Digite sua senha"
-                                    value="galego"
+                                    value="aluno"
                                 />
                             {:else}
                                 <input
@@ -115,7 +115,7 @@
                                     id="password"
                                     name="senha"
                                     placeholder="Digite sua senha"
-                                    value="pipico"
+                                    value="administrador"
                                 />
                             {/if}
                         </div>

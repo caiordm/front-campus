@@ -12,7 +12,7 @@
         <div>
             <span
                 >Olá, <span style="color: #3065ac; font-weight:500;"
-                    >Emerson Galego</span
+                    >Emerson</span
                 ></span
             >
         </div>

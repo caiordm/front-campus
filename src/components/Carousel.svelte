@@ -14,6 +14,6 @@
     transitionParams={{ duration: 100 }}
     showCaptions={false}
     showThumbs={false}
-    duration="5000"
+    duration="4000"
   />
 </div>

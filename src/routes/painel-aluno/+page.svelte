@@ -135,7 +135,7 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        width: 55%;
+        width: 85%;
     }
 
     p {

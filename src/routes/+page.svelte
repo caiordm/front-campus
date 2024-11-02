@@ -60,7 +60,9 @@
     }
 
     span {
-        color: #a1a1a1;
+        color: #4b4b4b;
+        font-weight: 700;
+        align-self: center;
     }
 
     /* body {
@@ -133,6 +135,10 @@
             height: 100vh;
         }
 
+        .main {
+            flex-direction: column;
+        }
+
         body {
             background-attachment: none;
         }
@@ -156,6 +162,11 @@
 
         .entrar {
             width: 100%;
+        }
+
+        span { 
+            align-self: center;
+            max-width: 80%;
         }
     }
 </style>
